@@ -1,0 +1,81 @@
+@import url('/src/css/fonts.css');
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-text {
+  animation-duration: 1s;
+  animation-name: fade-left;
+}
+.slider-button {
+  animation-duration: 1.3s;
+  animation-name: fade-left;
+}
+/* @keyframes fade-in {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 0%;
+  }
+} */
+@keyframes fade-left {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@layer components {
+  .tailwind-custom-scroll {
+    @apply scrollbar-thumb-rounded-lg scrollbar-track-rounded-lg scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-[#efefef];
+  }
+  .btn {
+    @apply py-1 px-4 text-base font-semibold hover:bg-[#6fbbc5] bg-[#75c5cf] border border-[#35929e] flex items-center rounded-md shadow-lg text-white;
+  }
+}
+
+@layer base {
+  form [type='text'],
+  form [type='password'],
+  form [type='email'] {
+    @apply border border-blue-400 p-2 rounded-md outline-none;
+  }
+}
+.tr {
+  transition: 0.5s ease;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 30px;
+}

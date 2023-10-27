@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'vazir';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/src/assets/fonts/Vazir.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'vazir';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/src/assets/fonts/Vazir-Bold.woff') format('woff');
+}
+
+body,
+button {
+  font-family: 'vazir';
+}
+* {
+  -webkit-user-select: none;
+}
+
+/*  PREVENT TEXT SIZE SCALLING */
+
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+  html,
+  body,
+  p {
+    text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -ms-text-size-adjust: none !important;
+  }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html,
+  body,
+  p {
+    text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -ms-text-size-adjust: none !important;
+  }
+}
