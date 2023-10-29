@@ -37,13 +37,13 @@ export default function Navbar() {
             open ? 'top-16 ' : 'top-[-490px]'
           }`}
         >
-          <li onClick={() => setOpen(false)} className="pl-9 py-3 md:py-0">
+          <li onClick={() => setOpen(false)} className="pr-9 py-3 md:py-0">
             <NavLink to={'/'}>خانه</NavLink>
           </li>
-          <li onClick={() => setOpen(false)} className="pl-9 py-3 md:py-0">
+          <li onClick={() => setOpen(false)} className="pr-9 py-3 md:py-0">
             <a href="#footer">ارتباط با ما</a>
           </li>
-          <li onClick={() => setOpen(false)} className="pl-9 py-3 md:py-0">
+          <li onClick={() => setOpen(false)} className="pr-9 py-3 md:py-0">
             <User />
           </li>
           <li
