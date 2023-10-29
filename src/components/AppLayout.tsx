@@ -11,10 +11,14 @@ function AppLayout() {
     <>
       <HeadingLine title={`Search Result ${data.length}`} marginTop="mt-16" />
       <section className="grid grid-cols-2 h-screen">
-        <aside className="overflow-y-scroll tailwind-custom-scroll !scrollbar-thumb-blue-600">
+        <Map markerLocations={data} />
+
+        <aside
+          dir="ltr"
+          className="overflow-y-scroll tailwind-custom-scroll !scrollbar-thumb-blue-600"
+        >
           <Outlet />
         </aside>
-        <Map markerLocations={data} />
       </section>
     </>
   );

@@ -1,6 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import { BiArrowBack } from 'react-icons/bi';
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -9,6 +8,7 @@ import toast from 'react-hot-toast';
 import Loader from './Loader';
 import ReactCountryFlag from 'react-country-flag';
 import { useBookmark } from '../context/BookmarkListContext';
+import ButtonBack from './ButtonBack';
 
 const BASE_GEOCODING_URL = 'https://api.bigdatacloud.net/data/reverse-geocode-client';
 
@@ -33,7 +33,7 @@ function AddNewBookmark() {
           `${BASE_GEOCODING_URL}?latitude=${lat}&longitude=${lng}`,
         );
         if (!data.countryCode)
-          throw new Error('This is not a city! please click on somewhere else.');
+          throw new Error('این یک شهر نیست! لطفا روی جای دیگری کلیک کنید');
 
         setCityName(data.city || data.locality || '');
         setCountry(data.countryName);
@@ -70,12 +70,15 @@ function AddNewBookmark() {
   return (
     <div className="px-2 md:px-5">
       <h1 className="text-base md:text-lg font-bold capitalize mb-11">
-        Bookmark new location
+        بوکمارک کردن مکان جدید
       </h1>
 
       <form action="" onSubmit={handleSubmit} className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-x-4">
-          <label htmlFor="cityName">CityName:</label>
+          <label dir="rtl" htmlFor="cityName">
+            {' '}
+            شهر:
+          </label>
           <input
             value={cityName}
             onClick={(e) => setCityName(e.target.value)}
@@ -85,7 +88,9 @@ function AddNewBookmark() {
           />
         </div>
         <div className="flex flex-col gap-x-4 relative">
-          <label htmlFor="country">Country:</label>
+          <label dir="rtl" htmlFor="country">
+            کشور:
+          </label>
           <input
             value={country}
             onClick={(e) => setCountry(e.target.value)}
@@ -100,17 +105,8 @@ function AddNewBookmark() {
           />
         </div>
         <div className="w-full justify-between flex flex-col-reverse gap-y-4 md:gap-y-0 md:flex-row md:items-center mt-6">
-          <button
-            className="btn  flex justify-center"
-            onClick={(e) => {
-              e.preventDefault();
-              navigate(-1);
-            }}
-          >
-            <BiArrowBack className="w-6 h-6 mr-2" />
-            Back
-          </button>
-          <button className="btn flex justify-center">Add new bookmark</button>
+          <ButtonBack />
+          <button className="btn flex justify-center">اضافه کردن بوکمارک جدید</button>
         </div>
       </form>
     </div>

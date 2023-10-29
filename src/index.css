@@ -35,14 +35,6 @@
   animation-duration: 1.3s;
   animation-name: fade-left;
 }
-/* @keyframes fade-in {
-  from {
-    margin-left: 50%;
-  }
-  to {
-    margin-left: 0%;
-  }
-} */
 @keyframes fade-left {
   from {
     margin-left: 50%;

@@ -22,7 +22,7 @@ function LogIn() {
   }, [isAuthenticated, navigate]);
   return (
     <section className="my-16">
-      <HeadingLine id="nearbyhotels" title="login form" marginTop="mt-16" />
+      <HeadingLine id="nearbyhotels" title="فرم ورود" marginTop="mt-16" />
       <form
         onSubmit={handleSubmit}
         action="#"
@@ -30,7 +30,7 @@ function LogIn() {
       >
         <div className="flex flex-col gap-y-4">
           <label htmlFor="email" className="font-bold">
-            Email
+            ایمیل
           </label>
           <input
             type="text"
@@ -42,7 +42,7 @@ function LogIn() {
         </div>
         <div className="flex flex-col gap-y-4">
           <label htmlFor="password" className="font-bold">
-            Password
+            رمز عبور
           </label>
           <input
             type="password"
@@ -53,7 +53,7 @@ function LogIn() {
           />
         </div>
         <button className="btn py-2 flex items-center justify-center text-lg">
-          Login
+          ورود
         </button>
       </form>
     </section>

@@ -50,7 +50,7 @@ function HotelTabs({ currentHotel }) {
   ];
   return (
     <section className="mt-6 mb-11 duration-500">
-      <HeadingLine title="Hotel Tabs" />
+      <HeadingLine title="جزئیات هتل" />
 
       <div className="hidden md:block mt-5 w-full border rounded-md shadow-lg p-3">
         <header className="grid grid-cols-3 pt-2 w-full border-b text-slate-700 dark:text-[#ccc]">

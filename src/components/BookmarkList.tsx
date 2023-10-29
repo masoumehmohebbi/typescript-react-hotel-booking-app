@@ -17,7 +17,7 @@ function BookmarkList() {
 
   if (isLoading) return <Loader />;
   if (!bookmarks.length)
-    return <p className="capitalize">There is no bookmarked location!</p>;
+    return <p className="capitalize">هیچ مکان نشانه گذاری شده ای وجود ندارد!</p>;
   return (
     <section className="px-2">
       <ButtonBack />

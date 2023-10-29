@@ -38,7 +38,7 @@ function Map({ markerLocations }) {
         className="absolute duration-500 bottom-4 left-4 py-1 text-sm px-3 rounded-lg capitalize bg-blue-600 hover:bg-blue-800 text-white shadow-lg z-50"
       >
         {' '}
-        {isLoadingGeoPosition ? 'Loading ...' : 'Use Your Location'}
+        {isLoadingGeoPosition ? 'Loading ...' : 'مکان من'}
       </button>
       <MapContainer
         className="h-full z-10"

@@ -9,15 +9,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   return (
-    <nav className="text-slate-800 transiton-all duration-100 ease-out shadow-menu md:shadow-none backdrop-blur-2xl blur-0 opacity-100 fixed left-0 w-full z-40  top-0 flex items-center">
-      <div className="max-[768px]:bg-white max-[768px]:dark:bg-primary grid grid-cols-3 md:gap-x-16 md:grid-cols-7 dark:text-[#ccc] w-full h-full p-5 transiton-all duration-100 ease-out shadow-menu md:shadow-none md:backdrop-blur-2xl md:blur-0 md:opacity-100">
+    <nav className="text-slate-800 max-[768px]:bg-white max-[768px]:dark:bg-primary h-20 transiton-all duration-100 ease-out shadow-menu md:shadow-none backdrop-blur-2xl blur-0 opacity-100 fixed left-0 w-full z-40  top-0 flex items-center">
+      <div className="max-[768px]:bg-white max-[768px]:dark:bg-primary grid grid-cols-3 md:gap-x-16 md:grid-cols-7 dark:text-[#ccc] w-full h-full px-5 py-4 transiton-all duration-100 ease-out shadow-menu md:shadow-none md:backdrop-blur-2xl md:blur-0 md:opacity-100">
         <a
           href="#"
-          className="flex text-xl space-x-3 pr-5 col-span-1 md:col-span-2"
-          onClick={() => navigate('/typescript-react-hotel-booking-app')}
+          className="flex text-xl space-x-3 pr-5 col-span-1 md:col-span-2 absolute md:static left-0"
+          onClick={() => navigate('/')}
         >
+          <div className="flex flex-col">
+            <span>HotelBooking</span>
+            <span className="text-xs">شبکه رزرواسیون هتل</span>
+          </div>
           <img src={LOGO} className="w-9 h-9" alt="" />
-          HotelBooking
         </a>
         <button
           onClick={() => setOpen(!open)}
@@ -35,10 +38,10 @@ export default function Navbar() {
           }`}
         >
           <li onClick={() => setOpen(false)} className="pl-9 py-3 md:py-0">
-            <NavLink to={'/typescript-react-hotel-booking-app'}>Home</NavLink>
+            <NavLink to={'/'}>خانه</NavLink>
           </li>
           <li onClick={() => setOpen(false)} className="pl-9 py-3 md:py-0">
-            <a href="#footer">Contact</a>
+            <a href="#footer">ارتباط با ما</a>
           </li>
           <li onClick={() => setOpen(false)} className="pl-9 py-3 md:py-0">
             <User />

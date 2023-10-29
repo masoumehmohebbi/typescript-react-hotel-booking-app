@@ -45,17 +45,17 @@ export default function Slider() {
             <div className=" absolute text-white top-6 gap-y-9 flex flex-col items-center justify-center w-full">
               <p className="slider-text flex flex-col text-sm md:text-base w-11/12 md:w-full">
                 <span className="font-bold capitalize text-lg md:text-2xl mb-3">
-                  Welcome to your hotelBooking
+                  به هتل بوگینگ خوش آمدید
                 </span>
                 <span className="text-xs sm:text-sm md:text-base">
-                  Click on the button to read about us!!
+                  برای اطلاعات بیشتر بر روی دکمه ی زیر کلیک کنید!
                 </span>
               </p>
               <a
                 href="#footer"
                 className="slider-button bg-[#e331bf] text-xs md:text-sm duration-500 border hover:bg-[#b90a96] border-[#b90a96] md:py-3 uppercase p-2 md:px-4 rounded-md"
               >
-                About HotelBooking
+                درباره ی هتل بوکینگ
               </a>
             </div>
           </div>
@@ -66,17 +66,17 @@ export default function Slider() {
             <div className=" absolute text-white top-6 gap-y-9 flex flex-col items-center justify-center w-full">
               <p className="slider-text flex flex-col capitalize w-11/12 md:w-full">
                 <span className="font-bold text-lg md:text-2xl mb-3">
-                  Welcome to your hotelBooking
+                  به شبکه رزرواسیون هتل خوش آمدید
                 </span>
                 <span className="text-xs sm:text-sm md:text-base">
-                  Click on the button to see nearby hotels!
+                  برای دیدن نزدیک ترین هتل ها روی دکمه کلیک کنید!
                 </span>
               </p>
               <a
                 href="#nearbyhotels"
                 className="slider-button bg-[#e331bf] text-xs md:text-sm duration-500 border hover:bg-[#b90a96] border-[#b90a96] md:py-3 uppercase p-2 md:px-4 rounded-md"
               >
-                nearby hotels
+                نزدیک ترین هتل ها
               </a>
             </div>
           </div>

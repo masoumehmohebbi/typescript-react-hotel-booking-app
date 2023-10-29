@@ -90,7 +90,7 @@ function ReservationForm() {
           onChange={(e) => setDestination(e.target.value)}
           type="text"
           className="capitalize outline-none p-2 text-sm lg:text-base"
-          placeholder="where to go?"
+          placeholder="جستجوی مقصد(شهر یا هتل)"
         />
       </span>
       <div className="flex items-center text-sm lg:text-base">
@@ -102,7 +102,7 @@ function ReservationForm() {
             setIsOpenDate((prev) => !prev);
           }}
         >
-          {`${format(date[0].startDate, 'MM/dd/yyyy')} to ${format(
+          {`${format(date[0].startDate, 'MM/dd/yyyy')} تا ${format(
             date[0].endDate,
             'MM/dd/yyyy',
           )}`}
@@ -131,7 +131,7 @@ function ReservationForm() {
               setIsOpenOptions((is) => !is);
             }}
           >
-            {options.adult} adult {options.children} children {options.room} room
+            {options.adult} بزرگسال {options.children} کودک {options.room} اتاق
           </span>
         </div>
         {isOpenOptions && (
@@ -226,7 +226,7 @@ export function User() {
         </div>
       ) : (
         <NavLink to={'/login'} className="flex items-center">
-          <BiLogIn className="w-6 h-6 mr-3 text-slate-500" /> LogIn
+          <BiLogIn className="w-6 h-6 mr-3 text-slate-500" /> وارد شوید
         </NavLink>
       )}
     </>

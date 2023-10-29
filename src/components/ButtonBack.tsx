@@ -5,7 +5,7 @@ function ButtonBack() {
   const navigate = useNavigate();
   return (
     <button onClick={() => navigate(-1)} className="btn">
-      <BiArrowBack className="w-6 h-6 mr-2" /> Back
+      <BiArrowBack className="w-6 h-6 mr-2" /> برگشت
     </button>
   );
 }

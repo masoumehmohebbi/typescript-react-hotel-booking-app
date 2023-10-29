@@ -9,12 +9,15 @@ function BookmarkLayout() {
   const { bookmarks } = useBookmark();
   return (
     <>
-      <HeadingLine title={`Bookmark Hotels`} marginTop="mt-16" />
+      <HeadingLine title={` بوکمارک هتل ها`} marginTop="mt-16" />
       <section className="grid grid-cols-2 h-screen">
-        <aside className="overflow-y-scroll tailwind-custom-scroll !scrollbar-thumb-blue-600">
+        <Map markerLocations={bookmarks} />
+        <aside
+          dir="ltr"
+          className="overflow-y-scroll tailwind-custom-scroll !scrollbar-thumb-blue-600"
+        >
           <Outlet />
         </aside>
-        <Map markerLocations={bookmarks} />
       </section>
     </>
   );
