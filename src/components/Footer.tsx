@@ -10,7 +10,9 @@ function Footer() {
         className="bg-[#3c3c3c] leading-7 flex flex-col md:flex-row px-5 py-11 justify-between gap-7 text-[#898989]"
       >
         <div className="flex flex-col flex-1 space-y-7">
-          <h2 className="uppercase">درباره ی هتل بوکینگ</h2>
+          <h2 className="uppercase font-bold text-lg text-blue-500">
+            درباره ی هتل بوکینگ
+          </h2>
           <p className="text-justify">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
             طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله کتابهای زیادی در شصت و
@@ -20,7 +22,9 @@ function Footer() {
           </p>
         </div>
         <div className="flex flex-col flex-1 space-y-7">
-          <h2 className="uppercase">دانلود اپلیکیشن هتل بوکینگ</h2>
+          <h2 className="uppercase font-bold text-lg text-blue-500">
+            دانلود اپلیکیشن هتل بوکینگ
+          </h2>
           <p>
             اپلیکیشن هتل بوکینگ را دانلود کنید و با تلفن همراهتان رزروتان را آسان تر انجام
             دهید
@@ -44,7 +48,7 @@ function Footer() {
           </ul>
         </div>
         <div className="flex flex-col flex-1 space-y-7">
-          <h2 className="uppercase">دریافت خبرنامه</h2>
+          <h2 className="uppercase font-bold text-lg text-blue-500">دریافت خبرنامه</h2>
           <p>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از لازم
             ابزارهای کاربردی می باشد.
@@ -59,7 +63,7 @@ function Footer() {
           </button>
         </div>
         <div className="flex flex-col flex-1 space-y-7">
-          <h2 className="uppercase">فهرست عناوین سایت</h2>
+          <h2 className="uppercase font-bold text-lg text-blue-500">فهرست عناوین سایت</h2>
           <ul className="space-y-3">
             <li className="border-b-2 border-[#ccc] py-1 pr-1">
               <a href="#">پیگیری رزرو</a>

@@ -54,9 +54,11 @@ export default App;
 
 function HotelBookingExperience() {
   return (
-    <div className="w-full flex font-bold flex-col items-center justify-center gap-y-5 text-white h-80 bg-fixed bg-[url('https://slashdown.net/starhotel-html/images/parallax/parallax-01.jpg')]">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl">هتل بوکینگ</h1>
-      <p className="capitalize text-base px-6 md:text-xl">
+    <div className="w-full flex font-bold text-white flex-col items-center justify-center gap-y-5 h-80 bg-fixed bg-[url('https://slashdown.net/starhotel-html/images/parallax/parallax-01.jpg')]">
+      <h1 className="text-2xl font-black sm:text-3xl md:text-4xl drop-shadow-2xl">
+        هتل بوکینگ
+      </h1>
+      <p className="capitalize font-black text-base px-6 md:text-xl drop-shadow-2xl">
         بزرگ ترین سامانه رزرو هتل آنلاین و امکان جستجوی سریع و رزرو آسان هتل و هتل
         آپارتمان را برای شما فراهم نموده است.
       </p>

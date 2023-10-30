@@ -94,7 +94,7 @@ function ReservationForm() {
         />
       </span>
       <div className="flex items-center text-sm lg:text-base">
-        <BiInfoCircle className="w-5 h-5 text-[#9f9f9f] mr-1" />
+        <BiInfoCircle className="w-5 h-5 text-[#9f9f9f] ml-1" />
         <span
           className="cursor-pointer"
           onClick={() => {
@@ -122,7 +122,7 @@ function ReservationForm() {
       )}
       <div className="relative flex flex-col md:flex-row text-sm lg:text-base">
         <div className="flex items-center">
-          <BiInfoCircle className="w-5 h-5 text-[#9f9f9f] mr-1" />
+          <BiInfoCircle className="w-5 h-5 text-[#9f9f9f] ml-1" />
           <span
             id="optionDropDown"
             className="cursor-pointer"
