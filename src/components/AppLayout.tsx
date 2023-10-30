@@ -9,7 +9,7 @@ function AppLayout() {
   const { data } = useHotels();
   return (
     <>
-      <HeadingLine title={`Search Result ${data.length}`} marginTop="mt-16" />
+      <HeadingLine title={` نتیجه جستجو ${data.length}`} marginTop="mt-16" />
       <section className="grid grid-cols-2 h-screen">
         <Map markerLocations={data} />
 
