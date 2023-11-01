@@ -15,14 +15,14 @@ function Hotels() {
           to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
         >
           <div
-            className={`flex flex-col lg:flex-row rounded-md p-1 border ${
+            className={`flex flex-col sm:flex-row min-[768px]:flex-col lg:flex-row rounded-md p-1 border ${
               item.id === currentHotel?.id
                 ? 'ring-1 ring-offset-2 ring-blue-500 dark:ring-offset-primary border-blue-500'
                 : ''
             }`}
           >
             <img
-              className="h-40 w-full lg:w-60 rounded-md mr-5"
+              className="h-40 w-80 md:w-full lg:w-60 rounded-md mr-5"
               src={item.picture_url.url}
               alt=""
             />

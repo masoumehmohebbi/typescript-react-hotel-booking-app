@@ -54,7 +54,7 @@ function HotelTabs({ currentHotel }) {
     <section className="mt-6 mb-11 duration-500">
       <HeadingLine title="جزئیات هتل" />
 
-      <div className="hidden md:block mt-5 w-full border rounded-md shadow-lg p-3">
+      <div className="hidden min-[990px]:block mt-5 w-full border lg:w-[30rem] rounded-md shadow-lg p-3">
         <header className="grid grid-cols-3 pt-2 w-full border-b text-slate-700 dark:text-[#ccc]">
           {tabTitles.map((title) => (
             <button
@@ -81,7 +81,7 @@ function HotelTabs({ currentHotel }) {
         </main>
       </div>
       {/* mobile */}
-      <div className="md:hidden">
+      <div className="min-[990px]:hidden">
         {tabTitles.map((item) => (
           <main key={item.id} className="grid grid-cols-2 gap-5 mt-6 h-fit p-2">
             <span className="capitalize font-bold">{item.name}</span>
