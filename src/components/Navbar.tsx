@@ -48,7 +48,7 @@ export default function Navbar() {
           </li>
           <li
             onClick={() => setOpen(false)}
-            className="bg-blue-100 dark:bg-[#9c9c9c] md:dark:bg-transparent md:bg-transparent py-3 md:py-0 shadow-lg md:shadow-none"
+            className="bg-blue-100 dark:bg-slate-600 md:dark:bg-transparent md:bg-transparent py-3 md:py-0 shadow-lg md:shadow-none"
           >
             <DarkModeToggle />
           </li>

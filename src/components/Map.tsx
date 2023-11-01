@@ -32,7 +32,7 @@ function Map({ markerLocations }) {
   }, [geoLocationPosition]);
 
   return (
-    <div className="relative z-10 h-72 col-span-2 md:col-span-1 md:h-auto">
+    <div className="relative z-10 h-64 col-span-2 md:col-span-1 md:h-auto">
       {/* <div className="w-full flex justify-end px-2 pb-2 md:hidden">
         <ButtonBack />
       </div> */}
