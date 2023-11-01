@@ -18,7 +18,9 @@ function SingleHotel() {
   if (isLoadingCurrentHotel || !currentHotel) return <Loader />;
   return (
     <div className="px-2">
-      <ButtonBack />
+      <div className="hidden md:block">
+        <ButtonBack />
+      </div>
       <div
         className={` 
        flex justify-center items-center mt-6 flex-col gap-y-3`}

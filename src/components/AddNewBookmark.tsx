@@ -8,7 +8,6 @@ import toast from 'react-hot-toast';
 import Loader from './Loader';
 import ReactCountryFlag from 'react-country-flag';
 import { useBookmark } from '../context/BookmarkListContext';
-import ButtonBack from './ButtonBack';
 
 const BASE_GEOCODING_URL = 'https://api.bigdatacloud.net/data/reverse-geocode-client';
 
@@ -68,8 +67,8 @@ function AddNewBookmark() {
   if (isLoadingGeoCoding) return <Loader />;
   if (geoCodingError) return <GeoCodingError geoCodingError={geoCodingError} />;
   return (
-    <div className="px-2 md:px-5">
-      <h1 className="text-base md:text-lg font-bold capitalize mb-11">
+    <div className="px-2 md:px-5 ">
+      <h1 className="text-base flex items-end justify-end md:text-start mt-5 md:mt-0 md:text-lg font-bold capitalize mb-11">
         بوکمارک کردن مکان جدید
       </h1>
 
@@ -104,9 +103,11 @@ function AddNewBookmark() {
             className="absolute right-2 top-[55%]"
           />
         </div>
-        <div className="w-full justify-between flex flex-col-reverse gap-y-4 md:gap-y-0 md:flex-row md:items-center mt-6">
-          <ButtonBack />
-          <button className="btn flex justify-center">اضافه کردن بوکمارک جدید</button>
+        <div className="w-full justify-end my-4 md:my-0 flex gap-y-4 md:gap-y-0 flex-row items-center mt-6">
+          {/* <ButtonBack /> */}
+          <button className="btn flex justify-center text-sm sm:text-base">
+            اضافه کردن بوکمارک جدید
+          </button>
         </div>
       </form>
     </div>

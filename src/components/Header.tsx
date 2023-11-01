@@ -82,14 +82,14 @@ function ReservationForm() {
     navigate({ pathname: '/hotels', search: encodedParams.toString() });
   };
   return (
-    <div className="w-11/12 gap-y-9 min-[800px]:gap-y-0 mt-4 min-[800px]:mt-0 lg:w-4/5 p-6 lg:p-9 min-[800px]:items-center flex flex-col min-[800px]:flex-row justify-around shadow-lg min-[800px]:absolute min-[800px]:-bottom-14 z-10 rounded-md bg-white">
+    <div className="w-11/12 dark:bg-primary dark:border dark:border-['#5b5b5b'] gap-y-9 min-[800px]:gap-y-0 mt-4 min-[800px]:mt-0 lg:w-4/5 p-6 lg:p-9 min-[800px]:items-center flex flex-col min-[800px]:flex-row justify-around shadow-lg min-[800px]:absolute min-[800px]:-bottom-14 z-10 rounded-md bg-white">
       <span className="flex items-center">
         <BiSolidMap className="w-6 h-6 text-red-500" />
         <input
           value={destination}
           onChange={(e) => setDestination(e.target.value)}
           type="text"
-          className="capitalize outline-none p-2 text-sm lg:text-base"
+          className="capitalize outline-none p-2 text-sm lg:text-base bg-transparent"
           placeholder="جستجوی مقصد(شهر یا هتل)"
         />
       </span>
@@ -117,7 +117,7 @@ function ReservationForm() {
           ranges={date}
           minDate={new Date()}
           moveRangeOnFirstSelection={true}
-          className="md:absolute lg:top-28 md:top-20"
+          className="md:absolute lg:top-28 md:top-20 dark:bg-blue-400 dark:border"
         />
       )}
       <div className="relative flex flex-col md:flex-row text-sm lg:text-base">
@@ -167,7 +167,7 @@ function GuestOptionList({
   return (
     <div
       ref={optionsRef}
-      className="md:top-[67px] md:absolute bg-white shadow-lg border-t rounded-b-md p-5 w-64"
+      className="md:top-[67px] md:absolute dark:bg-blue-400 dark:border bg-white shadow-lg border-t rounded-b-md p-5 w-64"
     >
       {typeOption.map((item) => (
         <OptionItem
@@ -184,7 +184,7 @@ function GuestOptionList({
 
 function OptionItem({ options, typeItem, minLimit, handleOptions }: OptionItemProps) {
   return (
-    <div className="grid grid-cols-6 items-center gap-7 my-2 text-slate-800">
+    <div className="grid grid-cols-6 items-center gap-7 dark:text-primary my-2 text-slate-800">
       <span className="col-span-2 text-base capitalize">{typeItem}</span>
       <div className="flex items-center justify-between pl-5 col-span-4">
         <button
@@ -192,7 +192,7 @@ function OptionItem({ options, typeItem, minLimit, handleOptions }: OptionItemPr
           className="bg-blue-200 p-2 rounded-md cursor-pointer hover:bg-blue-300 duration-500"
           disabled={options[typeItem] <= minLimit}
         >
-          <BiMinus className="w-5 h-5" />
+          <BiMinus className="w-5 h-5 dark:text-primary" />
         </button>
 
         <span>{options[typeItem]}</span>
@@ -200,7 +200,7 @@ function OptionItem({ options, typeItem, minLimit, handleOptions }: OptionItemPr
           onClick={() => handleOptions(typeItem, 'inc')}
           className="bg-blue-200 p-2 rounded-md cursor-pointer hover:bg-blue-300 duration-500"
         >
-          <BiPlus className="w-5 h-5" />
+          <BiPlus className="w-5 h-5 dark:text-primary" />
         </button>
       </div>
     </div>

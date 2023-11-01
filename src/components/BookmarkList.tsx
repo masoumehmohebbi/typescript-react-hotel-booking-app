@@ -5,7 +5,6 @@ import { useBookmark } from '../context/BookmarkListContext';
 import Loader from './Loader';
 import ReactCountryFlag from 'react-country-flag';
 import { BiTrash } from 'react-icons/bi';
-import ButtonBack from './ButtonBack';
 
 function BookmarkList() {
   const { isLoading, bookmarks, currentBookmark, deleteBookmark } = useBookmark();
@@ -20,7 +19,9 @@ function BookmarkList() {
     return <p className="capitalize">هیچ مکان نشانه گذاری شده ای وجود ندارد!</p>;
   return (
     <section className="px-2">
-      <ButtonBack />
+      {/* <div className="hidden md:block">
+        <ButtonBack />
+      </div> */}
       <div className="flex flex-col gap-y-6 p-2 md:p-5">
         {bookmarks.map((item) => (
           <Link

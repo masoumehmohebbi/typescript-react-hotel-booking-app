@@ -57,7 +57,7 @@
   form [type='text'],
   form [type='password'],
   form [type='email'] {
-    @apply border border-blue-400 p-2 rounded-md outline-none;
+    @apply border border-blue-400 p-2 rounded-md outline-none bg-transparent;
   }
 }
 .tr {

@@ -32,7 +32,10 @@ function Map({ markerLocations }) {
   }, [geoLocationPosition]);
 
   return (
-    <div className="relative z-10">
+    <div className="relative z-10 h-72 col-span-2 md:col-span-1 md:h-auto">
+      {/* <div className="w-full flex justify-end px-2 pb-2 md:hidden">
+        <ButtonBack />
+      </div> */}
       <button
         onClick={getPosition}
         className="absolute duration-500 bottom-4 left-4 py-1 text-sm px-3 rounded-lg capitalize bg-blue-600 hover:bg-blue-800 text-white shadow-lg z-50"
