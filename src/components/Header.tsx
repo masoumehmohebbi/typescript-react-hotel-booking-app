@@ -213,13 +213,14 @@ export function User() {
   return (
     <>
       {isAuthenticated ? (
-        <div className="flex items-center">
-          <button
-            onClick={() => {
-              logOut();
-              navigate('/typescript-react-hotel-booking-app');
-            }}
-          >
+        <div
+          onClick={() => {
+            logOut();
+            navigate('/typescript-react-hotel-booking-app');
+          }}
+          className="flex items-center cursor-pointer"
+        >
+          <button>
             <BiLogOut className="w-6 h-6 mr-3 text-slate-500" />
           </button>
           {user?.name}
