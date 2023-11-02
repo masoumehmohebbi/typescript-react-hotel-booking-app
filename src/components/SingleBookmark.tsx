@@ -20,9 +20,9 @@ function SingleBookmark() {
 
   return (
     <div className="px-2">
-      <div className="hidden md:block">
+      {/* <div className="hidden md:block">
         <ButtonBack />
-      </div>
+      </div> */}
       <div className="mt-11 mb-11 md:mb-0">
         <div className="border py-2 px-4 shadow-lg rounded-lg">
           <h2 className="font-bold text-xl">{currentBookmark.cityName}</h2>
