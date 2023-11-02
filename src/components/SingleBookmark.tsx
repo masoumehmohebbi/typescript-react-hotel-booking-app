@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 import Loader from './Loader';
 
 import ReactCountryFlag from 'react-country-flag';
-import ButtonBack from './ButtonBack';
 
 function SingleBookmark() {
   const { id } = useParams();
