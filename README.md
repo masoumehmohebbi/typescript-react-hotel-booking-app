@@ -41,19 +41,19 @@ Hotel Booking App, based on TailwindCss library, ReactJs And Json-server.This Ap
 <h2>Development setup</h2>
 <p>1. First, you need to clone the project:</p>
 
-```sh
+```
 git clone https://github.com/masoumehmohebbi/typescript-react-hotel-booking-app
 ```
 
 <p>2. Then, install required packages:</p>
 
-```sh
+```
 pnpm i
 ```
 
 <p>3. Finally, run the <code>dev</code> script to start the dev server:</p>
 
-```sh
+```
 pnpm run dev
 ```
 
