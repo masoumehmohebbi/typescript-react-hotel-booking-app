@@ -17,7 +17,7 @@ Hotel Booking App, based on TailwindCss library, ReactJs And Json-server.This Ap
  <li>react-country-flag</li>
  <li>...</li>
 </ul>
-
+</hr>
 <figure>
  <img src="https://github.com/masoumehmohebbi/typescript-react-hotel-booking-app/blob/main/App_img_1.png"/>
 </figure>
