@@ -19,7 +19,7 @@ Hotel Booking App, based on TailwindCss library, ReactJs And Json-server.This Ap
 </ul>
 
 <figure>
- <img src="https://github.com/masoumehmohebbi/typescript-react-hotel-booking-app/blob/main/App_Img_1.PNG"/>
+ <img src="https://github.com/masoumehmohebbi/typescript-react-hotel-booking-app/blob/main/App_img_1.PNG"/>
 </figure>
 
 <h2>Dark_Mode</h2>
